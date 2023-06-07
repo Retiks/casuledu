@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;500;600;700&display=swap%27');
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: rgba(179, 179, 179, 0.815);
+}
+
+ul {
+    background-color: steelblue;
+    overflow: hidden;
+}
+  
+ul a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+ul a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+ul a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/*Accueil*/ 
+
+#accueil .main-titre {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    padding: 0 19%;
+}
+
+#accueil .titre h1 {
+    margin: 15px 0;
+    font-size: 5.5rem;
+    font-weight: 800;
+    color: steelblue;
+    letter-spacing: 2px;
+    line-height: 1.1;
+}
+
+#accueil .titre h2 {
+    margin: 15px 0;
+    font-size: 5.5rem;
+    font-weight: 800;
+    color: steelblue;
+    letter-spacing: 2px;
+    line-height: 1.1;
+}
+
+#accueil .titre h5 {
+    color: steelblue;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+#accueil .success-message {
+    left: 35%;
+    background-color: #5dcf30;
+    border: 1px solid #3c763d;
+    position: absolute;
+    padding: 30px;
+    border-radius: 10px;
+}
+  
+#accueil .success-message h2 {
+    margin-top: 0;
+}
+  
+#accueil .success-message p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/*Inscription*/
+
+#inscription #container {
+    width:400px;
+    margin:0 auto;
+    margin-top:5%;
+}
+
+.app input{
+accent-color: red;
+}
+
+#inscription form {
+    background-color: steelblue;
+    width:100%;
+    padding: 30px;
+}
+
+#inscription form #titre {
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+
+#inscription form h1 {
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+#inscription form input[type=email],  #inscription form input[type=text], #inscription form input[type=password], #inscription form input[type=date], #inscription form input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#inscription form input[type=submit], #inscription form input[type=button]{
+    background-color: white;
+    color: gray;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+}
+#inscription form input[type=submit]:hover, #inscription form input[type=button]:hover {
+    background-color: gray;
+    color: white;
+    border: 1px solid white;
+}
+
+#inscription .error-message {
+    left: 70%;
+    top: 40%;
+    margin-right: 3%;
+    background-color: #cf3030;
+    border: 1px solid #763c3c;
+    position: absolute;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#inscription .error-message p {
+    margin: 0;
+    font-size: 16px;
+}
+
+#inscription #choixSexe {
+    position: relative;
+    left: 110px;
+    margin-bottom: 30px;
+}
+
+/*Connexion*/
+
+#connexion #container {
+    width:400px;
+    margin:0 auto;
+    margin-top:5%;
+}
+
+.app input{
+accent-color: red;
+}
+
+#connexion form {
+    background-color: steelblue;
+    width:100%;
+    padding: 30px;
+}
+
+#connexion form #titre {
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+
+#connexion form h1 {
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+#connexion form input[type=email],  #connexion form input[type=text], #connexion form input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#connexion form input[type=submit], #connexion form input[type=button] {
+    background-color: white;
+    color: gray;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+#connexion form input[type=submit]:hover, #connexion form input[type=button]:hover {
+    background-color: gray;
+    color: white;
+    border: 1px solid white;
+}
+
+#connexion .alert {
+    left: 80%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgb(182, 36, 36);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#connexion .alert h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#connexion .success-message {
+    left: 75%;
+    top: 40%;
+    background-color: #5dcf30;
+    border: 1px solid #3c763d;
+    position: absolute;
+    padding: 30px;
+    border-radius: 10px;
+}
+  
+#connexion .success-message h2 {
+    margin-top: 0;
+}
+  
+#connexion .success-message p {
+    margin: 0;
+    font-size: 16px;
+}
+
+#connexion .error-message {
+    left: 70%;
+    top: 40%;
+    margin-right: 3%;
+    background-color: #cf3030;
+    border: 1px solid #763c3c;
+    position: absolute;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#connexion .error-message p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/*Profile*/
+
+#profile .form-control {
+    width: 50%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#profile .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#profile .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#profile .btn {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: grey;
+    cursor: pointer;
+    position: relative;
+    margin-left: 20%;
+    width: 130px;
+    height: 35px;
+}
+
+#profile .btn:hover {
+    background-color: gray;
+    color: white;
+}
+
+#profile .success-message {
+    left: 75%;
+    top: 40%;
+    background-color: #5dcf30;
+    border: 1px solid #3c763d;
+    position: absolute;
+    padding: 30px;
+    border-radius: 10px;
+}
+  
+#profile .success-message h2 {
+    margin-top: 0;
+}
+  
+#profile .success-message p {
+    margin: 0;
+    font-size: 16px;
+}
+
+#profile .error-message {
+    left: 70%;
+    top: 40%;
+    margin-right: 3%;
+    background-color: #cf3030;
+    border: 1px solid #763c3c;
+    position: absolute;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#profile .error-message p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/*Comptes*/
+
+#comptes #noAccount {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 6em;
+    text-align: center;
+    border: black  solid 3px;
+    padding: 25px;
+}
+
+#comptes #createAccount {
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: grey;
+    cursor: pointer;
+    position: relative;
+    margin-left: 45%;
+    width: 150px;
+    margin-top: 50px;
+}
+
+#comptes #createAccount:hover {
+    background-color: gray;
+    color: white;
+}
+
+#comptes #comptess {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+#comptes .compte {
+    background-color: steelblue;
+    border: 1px solid black;
+    width: 40%;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Create_Comptes*/
+
+#create_comptes form {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: steelblue;
+}
+  
+#create_comptes label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+  
+#create_comptes select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+}
+  
+#create_comptes input[type="submit"] {
+    width: 100%;
+    background-color: white;
+    color: gray;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+  
+#create_comptes input[type="submit"]:hover {
+    background-color: gray;
+    color: white;
+}
+
+/*Admin*/
+
+#admin button {
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: grey;
+    cursor: pointer;
+    position: relative;
+    margin-left: 45%;
+    width: 150px;
+}
+
+#admin button:hover {
+    background-color: gray;
+    color: white;
+}
+
+#admin_comptes #comptes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+#admin_comptes .compte {
+    background-color: steelblue;
+    border: 1px solid black;
+    width: 40%;
+    text-align: center;
+    padding: 20px;
+}
+
+#admin_comptes button {
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: grey;
+    cursor: pointer;
+    width: 150px;
+}
+
+#admin_comptes button:hover {
+    background-color: gray;
+    color: white;
+}
+
+#admin_addmontant button {
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: grey;
+    cursor: pointer;
+    width: 150px;
+}
+
+#admin_addmontant input[type=submit] {
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: grey;
+    cursor: pointer;
+    width: 150px;
+}
+
+#admin_addmontant button:hover {
+    background-color: gray;
+    color: white;
+}
+
+#admin_addmontant input[type=submit]:hover {
+    background-color: gray;
+    color: white;
+}
+
+#admin_addmontant input[type=number] {
+    width: 35%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#admin_addmontant form {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: steelblue;
+}
+
+#admin_addmontant label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
